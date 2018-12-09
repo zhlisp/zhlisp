@@ -1,6 +1,6 @@
-(defmacro ç•Œé¢ (åå­—)
-"å®šä¹‰ç•Œé¢åå­—ï¼Œå¹¶è¿›å…¥å®šä¹‰çš„ç¯å¢ƒ"
-`(progn (defpackage ,åå­—
+(defmacro ½çÃæ (Ãû×Ö)
+"¶¨Òå½çÃæÃû×Ö£¬²¢½øÈë¶¨ÒåµÄ»·¾³"
+`(progn (defpackage ,Ãû×Ö
 (:add-use-defaults t)
 (:use "CAPI"))
-(in-package ,åå­—)))
+(in-package ,Ãû×Ö)))
