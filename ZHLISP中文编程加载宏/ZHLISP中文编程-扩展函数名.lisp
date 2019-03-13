@@ -64,3 +64,6 @@
 (defmacro 读字节 (&optional &body body)"【读字节/read-byte】读取字节命令"`(read-byte ,@body))
 (defmacro 读字 (&optional &body body)"【读字/read-char】读取一个字母命令"`(read-char ,@body))
 (defmacro 余数 (&optional &body body)"【余数/rem】返回计算到的余数"`(rem ,@body))
+(defmacro 交换 (&optional &body body)"【交换/rotatef】交换两个参数的值"`(rotatef ,@body))
+(defmacro 值左移 (&optional &body body)"【值左移/shiftf】将所有参数的值依次左移一个参数，返回第一个的值"`(shiftf ,@body))
+(defmacro 变量赋值 (&optional &body body)"【变量赋值/setq】只能给变量赋值"`(setq ,@body))

@@ -4,24 +4,7 @@
 ;;;;学习交流www.lisp.vip
 ;;;;作者：陆志广
 
-(defmacro 全局变量 (&optional &rest rest)
-	“defparameter:全局变量”
-	`(defparameter ,@rest))
-
-(defmacro 定义 (&optional &rest rest)
-	“defun:定义”
-	`(defun ,@rest))
-	
-(defmacro 移位 (&optional &rest rest)
-	"ash:移位"
-	`(ash ,@rest))
-	
-(defmacro 赋值 (&optional &rest rest)
-	“setf:赋值”
-	`(setf ,@rest))
-
-
-;;;;如果你已经加载基本宏和扩展宏，那么便不用再执行上面的代码，可以从下面的代码直接执行。
+;;;;如果你已经加载基本宏和扩展宏，可以从下面的代码直接执行。
 
 
 
