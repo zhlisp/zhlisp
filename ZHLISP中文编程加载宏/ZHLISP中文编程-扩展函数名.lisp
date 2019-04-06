@@ -16,7 +16,7 @@
 (defmacro 替换序列原子 (&optional &body body)"【替换序列原子/substitute】替换序列中的原子"`(substitute ,@body))
 (defmacro 移位 (&optional &body body)"【移位/ash】相当于小数点的位置移动"`(ash ,@body))
 (defmacro 关联列表 (&optional &body body)"【关联列表/assoc】用来取出在关联列表中，与给定的键值有关联的cons对。"`(assoc ,@body))
-(defmacro 元素数 (&optional &body body)"【元素数/length】返回传入列表的元素数"`(length ,@body))
+(defmacro 长度 (&optional &body body)"【长度/length】返回传入列表的长度也就是元素数量"`(length ,@body))
 (defmacro 如果假 (&optional &body body)"【如果假/unless】如果条件为假则执行后面的表达式,否则跳过"`(unless ,@body))
 (defmacro 如果真 (&optional &body body)"【如果真/when】如果条件为真则执行后面的表达式,否则跳过"`(when ,@body))
 (defmacro 倒序 (&optional &body body)"【倒序/reverse】返回与其参数相同元素的一个序列,但顺序颠倒"`(reverse ,@body))
