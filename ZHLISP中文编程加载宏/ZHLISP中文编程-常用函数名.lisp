@@ -42,3 +42,4 @@
 (defmacro 打印 (&optional &body body)"【打印/print】打印出文本内容到屏幕"`(print ,@body))
 (defmacro 读行 (&optional &body body)"【读行/read-line】读取一行文本"`(read-line ,@body))
 (defmacro 随机数 (&optional &body body)"【随机数/random】生成n以内的随机数"`(random ,@body))
+(defmacro 求值 (&optional &body body)"【求值/eval】对引用的表达式进行求值"`(eval ,@body))
