@@ -68,3 +68,4 @@
 (defmacro 值左移 (&optional &body body)"【值左移/shiftf】将所有参数的值依次左移一个参数，返回第一个的值"`(shiftf ,@body))
 (defmacro 变量赋值 (&optional &body body)"【变量赋值/setq】只能给变量赋值"`(setq ,@body))
 (defmacro 断点 (&optional &body body)"【断点/break】插入断点，让程序暂停执行，以便查看参数，常用于程序调试"`(break ,@body))
+(defmacro 文本提取 (&optional &body body)"【文本提取/subseq】提取部分文本,零索引,如果省略第三个参数,则将字符串的其余部分放到最后"`(subseq ,@body))

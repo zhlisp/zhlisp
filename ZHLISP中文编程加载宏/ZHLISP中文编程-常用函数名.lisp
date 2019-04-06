@@ -7,7 +7,7 @@
 (defmacro 判断 (&optional &body body)"【判断/if】判断第一个参数的逻辑值 ，为真求值第二个，为假求值第三个"`(if ,@body))
 (defmacro 定义 (&optional &body body)"【定义/defun】定义新函数，三个参数，第一个函数名，第二个是一组用列表表示的实参，第三个是表达式"`(defun ,@body))
 (defmacro 相同 (&optional &body body)"【相同/eql】比较两个参数的是否相等"`(eql ,@body))
-(defmacro 输出 (&optional &body body)"【输出/format】输出字符串，第一个参数表示输出位置，第二个是字符模板，第三个是插入到字符串里的变量"`(format ,@body))
+(defmacro 格式 (&optional &body body)"【格式/format】格式化字符串，第一个参数表示文本输出位置，第二个是字符模板，第三个是插入到字符串里的变量"`(format ,@body))
 (defmacro 输入 (&optional &body body)"【输入/read】读入用户输入的值"`(read ,@body))
 (defmacro 变量 (&optional &body body)"【变量/let】定义一个局部变量"`(let ,@body))
 (defmacro 变量* (&optional &body body)"【变量*/let*】定义一个局部变量，并可以定时时调用已定义的变量"`(let* ,@body))
