@@ -118,6 +118,7 @@
 (加载 load "【加载/load】加载一个程序文件并按照文件内容执行程序")
 (函数调用列表 apply "【函数调用列表/apply】接受一个函数和实参列表，返回把传入函数应用在实参列表的结果，可以是任意数量的实参，但最后一个要是列表")
 (编译 compile-file "【编译/compile-file】将源码编译进二进制文件，加载和执行更快")
+(包内 in-package "【包内/in-package】在包内包含的资源")
 ;;;;GUI宏名
 (对话框 capi:display-message "【对话框/capi:display-message】弹出一个对话框窗口")
 (输入框 capi:prompt-for-string "【输入框/capi:prompt-for-string】弹出输入文本对话框窗口")
@@ -125,3 +126,5 @@
 (确认框 capi:prompt-for-confirmation "【确认框/capi:prompt-for-confirmation】弹出确认是否对话框窗口")
 (单选框 capi:prompt-with-list "【单选框/capi:prompt-with-list】弹出单项选择对话框框窗口")
 (多选框 capi:prompt-for-items-from-list "【多选框/capi:prompt-for-items-from-list】弹出多项选择对话框框窗口")
+
+

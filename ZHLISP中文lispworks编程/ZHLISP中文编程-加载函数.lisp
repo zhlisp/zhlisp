@@ -8,7 +8,7 @@
 (界面 中文LISP)
 
 ;;读代码
-(with-open-file (in (prompt-for-file "lkjljlj" :pathname "~/Downloads/"))
+(with-open-file (in (prompt-for-file "请打开ZHLISP中文编程-函数数据.lisp文件" :pathname "D:/GitHub/zhlisp/ZHLISP中文lispworks编程/ZHLISP中文编程-函数数据.lisp"))
   (when in
     (loop for line = (read in nil)
           while line do (when line
