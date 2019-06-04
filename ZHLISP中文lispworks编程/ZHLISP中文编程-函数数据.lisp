@@ -119,6 +119,10 @@
 (函数调用列表 apply "【函数调用列表/apply】接受一个函数和实参列表，返回把传入函数应用在实参列表的结果，可以是任意数量的实参，但最后一个要是列表")
 (编译 compile-file "【编译/compile-file】将源码编译进二进制文件，加载和执行更快")
 (包内 in-package "【包内/in-package】在包内包含的资源")
+(读符号值 getf "【读符号值/getf】读取和关键字符号关联的值")
+(解析整数 parse-integer "【解析整数/parse-integer】将内容转换为整数")
+(是否 y-or-n-p "【是否/y-or-n-p】提示输入是否并执行判断结果")
+(打开文件 with-open-file "【打开文件/with-open-file】打开文件执行完后自动关闭文件流")
 ;;;;GUI宏名
 (对话框 capi:display-message "【对话框/capi:display-message】弹出一个对话框窗口")
 (输入框 capi:prompt-for-string "【输入框/capi:prompt-for-string】弹出输入文本对话框窗口")
