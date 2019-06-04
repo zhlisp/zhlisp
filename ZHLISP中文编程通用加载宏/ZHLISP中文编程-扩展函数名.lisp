@@ -87,3 +87,7 @@
 (defmacro 解析整数 (&optional &body body)"【解析整数/parse-integer】读取和关键字符号关联的值"`(parse-integer ,@body))
 (defmacro 是否 (&optional &body body)"【是否/y-or-n-p】提示输入是否并执行判断结果"`(y-or-n-p ,@body))
 (defmacro 打开文件 (&optional &body body)"【打开文件/with-open-file】打开文件执行完后自动关闭文件流"`(with-open-file ,@body))
+(defmacro 强制输出 (&optional &body body)"【强制输出/force-output】输出内容到数据流"`(force-output ,@body))
+(defmacro 不匹配删除 (&optional &body body)"【不匹配删除/remove-if-not】将不符合条件的元素删除"`(remove-if-not ,@body))
+(defmacro 匹配删除 (&optional &body body)"【匹配删除/remove-if】将符合条件的元素删除"`(remove-if ,@body))
+
