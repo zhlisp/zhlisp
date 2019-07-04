@@ -18,10 +18,10 @@
 (SYSTEM::BQ-LIST* (QUOTE ,(car (cdr line))) `(,@body))))(abc))
 )))
 
-打开
-(prompt-for-file "lkjljlj" :pathname "~/Downloads/")
+;打开
+;(prompt-for-file "lkjljlj" :pathname "~/Downloads/")
 
-保存
-(with-open-file (out (prompt-for-file "lkjljlj" :pathname "~/Downloads/" :operation :save))
-  :direction :output
-  (format out "abcdefg"))
+;保存
+;(with-open-file (out (prompt-for-file "lkjljlj" :pathname "~/Downloads/" :operation :save))
+;  :direction :output
+;  (format out "abcdefg"))

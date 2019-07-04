@@ -126,6 +126,7 @@
 (强制输出 force-output "【强制输出/force-output】输出内容到数据流")
 (不匹配删除 remove-if-not "【不匹配删除/remove-if-not】将不符合条件的元素删除")
 (匹配删除 remove-if "【匹配删除/remove-if】将符合条件的元素删除")
+(宏变量 with-gensyms "【宏变量/with-gensyms】定义宏里面使用的变量")
 ;;;;GUI宏名
 (对话框 capi:display-message "【对话框/capi:display-message】弹出一个对话框窗口")
 (输入框 capi:prompt-for-string "【输入框/capi:prompt-for-string】弹出输入文本对话框窗口")

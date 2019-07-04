@@ -90,4 +90,4 @@
 (defmacro 强制输出 (&optional &body body)"【强制输出/force-output】输出内容到数据流"`(force-output ,@body))
 (defmacro 不匹配删除 (&optional &body body)"【不匹配删除/remove-if-not】将不符合条件的元素删除"`(remove-if-not ,@body))
 (defmacro 匹配删除 (&optional &body body)"【匹配删除/remove-if】将符合条件的元素删除"`(remove-if ,@body))
-
+(defmacro 宏变量 (&optional &body body)"【宏变量/with-gensyms】定义宏里面使用的变量"`(with-gensyms ,@body))
