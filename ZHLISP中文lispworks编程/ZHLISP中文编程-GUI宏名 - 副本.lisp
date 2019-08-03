@@ -1,18 +1,18 @@
-(defmacro ½çÃæ (Ãû×Ö)
-"¶¨Òå°ü½çÃæÃû×Ö£¬²¢½øÈë¶¨ÒåµÄ»·¾³"
-`(progn (defpackage ,Ãû×Ö
+(defmacro ç•Œé¢ (åå­—)
+"å®šä¹‰åŒ…ç•Œé¢åå­—ï¼Œå¹¶è¿›å…¥å®šä¹‰çš„ç¯å¢ƒ"
+`(progn (defpackage ,åå­—
 (:add-use-defaults t)
 (:use "CAPI"))
-(in-package ,Ãû×Ö)))
+(in-package ,åå­—)))
 
-(defmacro ¶Ô»°¿ò (&optional &body body)"¡¾¶Ô»°¿ò/capi:display-message¡¿µ¯³öÒ»¸ö¶Ô»°¿ò´°¿Ú"`(capi:display-message ,@body))
+(defmacro å¯¹è¯æ¡† (&optional &body body)"ã€å¯¹è¯æ¡†/capi:display-messageã€‘å¼¹å‡ºä¸€ä¸ªå¯¹è¯æ¡†çª—å£"`(capi:display-message ,@body))
 
-(defmacro ÊäÈë¿ò (&optional &body body)"¡¾ÊäÈë¿ò/capi:prompt-for-string¡¿µ¯³öÊäÈëÎÄ±¾¶Ô»°¿ò´°¿Ú"`(capi:prompt-for-string ,@body))
+(defmacro è¾“å…¥æ¡† (&optional &body body)"ã€è¾“å…¥æ¡†/capi:prompt-for-stringã€‘å¼¹å‡ºè¾“å…¥æ–‡æœ¬å¯¹è¯æ¡†çª—å£"`(capi:prompt-for-string ,@body))
 
-(defmacro ÊäÈëÊı×Ö (&optional &body body)"¡¾ÊäÈëÊı×Ö/capi:prompt-for-number¡¿µ¯³öÊäÈëÊı×Ö¶Ô»°¿ò´°¿Ú"`(capi:prompt-for-number ,@body))
+(defmacro è¾“å…¥æ•°å­— (&optional &body body)"ã€è¾“å…¥æ•°å­—/capi:prompt-for-numberã€‘å¼¹å‡ºè¾“å…¥æ•°å­—å¯¹è¯æ¡†çª—å£"`(capi:prompt-for-number ,@body))
 
-(defmacro  È·ÈÏ¿ò (&optional &body body)"¡¾È·ÈÏ¿ò/capi:prompt-for-confirmation¡¿µ¯³öÈ·ÈÏÊÇ·ñ¶Ô»°¿ò´°¿Ú"`(capi:prompt-for-confirmation ,@body))
+(defmacro  ç¡®è®¤æ¡† (&optional &body body)"ã€ç¡®è®¤æ¡†/capi:prompt-for-confirmationã€‘å¼¹å‡ºç¡®è®¤æ˜¯å¦å¯¹è¯æ¡†çª—å£"`(capi:prompt-for-confirmation ,@body))
 
-(defmacro  µ¥Ñ¡¿ò (&optional &body body)"¡¾µ¥Ñ¡¿ò/capi:prompt-with-list¡¿µ¯³öµ¥ÏîÑ¡Ôñ¶Ô»°¿ò¿ò´°¿Ú"`(capi:prompt-with-list ,@body))
+(defmacro  å•é€‰æ¡† (&optional &body body)"ã€å•é€‰æ¡†/capi:prompt-with-listã€‘å¼¹å‡ºå•é¡¹é€‰æ‹©å¯¹è¯æ¡†æ¡†çª—å£"`(capi:prompt-with-list ,@body))
 
-(defmacro  ¶àÑ¡¿ò (&optional &body body)"¡¾¶àÑ¡¿ò/capi:prompt-for-items-from-list¡¿µ¯³ö¶àÏîÑ¡Ôñ¶Ô»°¿ò¿ò´°¿Ú"`(capi:prompt-for-items-from-list ,@body))
+(defmacro  å¤šé€‰æ¡† (&optional &body body)"ã€å¤šé€‰æ¡†/capi:prompt-for-items-from-listã€‘å¼¹å‡ºå¤šé¡¹é€‰æ‹©å¯¹è¯æ¡†æ¡†çª—å£"`(capi:prompt-for-items-from-list ,@body))

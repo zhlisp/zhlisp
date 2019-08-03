@@ -1,14 +1,14 @@
-(defmacro ½çÃæ (Ãû×Ö)
-"¶¨Òå°ü½çÃæÃû×Ö£¬²¢½øÈë¶¨ÒåµÄ»·¾³"
-`(progn (defpackage ,Ãû×Ö
+(defmacro ç•Œé¢ (åå­—)
+"å®šä¹‰åŒ…ç•Œé¢åå­—ï¼Œå¹¶è¿›å…¥å®šä¹‰çš„ç¯å¢ƒ"
+`(progn (defpackage ,åå­—
 (:add-use-defaults t)
 (:use "CAPI"))
-(in-package ,Ãû×Ö)))
+(in-package ,åå­—)))
 
-(½çÃæ ÖĞÎÄLISP)
+(ç•Œé¢ ä¸­æ–‡LISP)
 
-;;¶Á´úÂë
-(with-open-file (in (prompt-for-file "Çë´ò¿ªZHLISPÖĞÎÄ±à³Ì-º¯ÊıÊı¾İ.lispÎÄ¼ş" :pathname "D:/GitHub/zhlisp/ZHLISPÖĞÎÄlispworks±à³Ì/ZHLISPÖĞÎÄ±à³Ì-º¯ÊıÊı¾İ.lisp"))
+;;è¯»ä»£ç 
+(with-open-file (in (prompt-for-file "è¯·æ‰“å¼€ZHLISPä¸­æ–‡ç¼–ç¨‹-å‡½æ•°æ•°æ®.lispæ–‡ä»¶" :pathname "D:/GitHub/zhlisp/ZHLISPä¸­æ–‡lispworksç¼–ç¨‹/ZHLISPä¸­æ–‡ç¼–ç¨‹-å‡½æ•°æ•°æ®.lisp"))
   (when in
     (loop for line = (read in nil)
           while line do (when line
@@ -18,10 +18,10 @@
 (SYSTEM::BQ-LIST* (QUOTE ,(car (cdr line))) `(,@body))))(abc))
 )))
 
-;´ò¿ª
+;æ‰“å¼€
 ;(prompt-for-file "lkjljlj" :pathname "~/Downloads/")
 
-;±£´æ
+;ä¿å­˜
 ;(with-open-file (out (prompt-for-file "lkjljlj" :pathname "~/Downloads/" :operation :save))
 ;  :direction :output
 ;  (format out "abcdefg"))
