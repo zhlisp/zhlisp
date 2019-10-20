@@ -53,7 +53,7 @@
   (格式 t "~:[失败~;通过~] ... ~a~%" 结果 外形)
   结果)
 
-(defmacro with-gensyms ((&rest names) &body body)
+(defmacro 宏变量 ((&rest names) &body body)
               `(let ,(loop for n in names collect `(,n (gensym)))
                  ,@body))
 
@@ -165,7 +165,7 @@
   `(合并-结果
     ,@(循环 for f in 外形 collect `(报告结果 ,f ',f))))
 
-(defmacro with-gensyms ((&rest names) &body body)
+(defmacro 宏变量 ((&rest names) &body body)
               `(let ,(loop for n in names collect `(,n (gensym)))
                  ,@body))
 

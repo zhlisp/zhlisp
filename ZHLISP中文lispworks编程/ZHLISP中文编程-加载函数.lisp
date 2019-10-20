@@ -8,25 +8,27 @@
 (界面 中文LISP)
 
 ;;读代码
-(defun zhlisp (filename &optional (name "请打开'ZHLISP中文编程-函数数据.lisp'文件"))
+
+(defun zzhlisp (en zh help)
+	`(defmacro ,zh (&optional &body body)
+		,@help
+		`(,',en ,@body)))
+
+(defun zhlisp (&optional (filename "~/") (name "请打开'ZHLISP中文编程-函数数据.lisp'文件"))
 	(with-open-file (in (prompt-for-file name :pathname filename))
 		(when in
 			(loop for line = (read in nil)
 				while line do (when line
-					(defmacro zzhlisp ()
-					`(defmacro ,(car (cdr line)) (&optional &body body)
-						,(format nil "~A" (cdr (cdr line)))
-						`(,',(car line) ,@body)))
-					(zzhlisp))))))
+					(eval (zzhlisp (car line) (car (cdr line)) (cdr (cdr line)))))))))
 
-(zhlisp "C:/lisp/zhlisp/ZHLISP中文lispworks编程/ZHLISP中文编程-函数数据.lisp" "中文编程")
+(zhlisp)
+
+(格式 t "世界，你好！")
 
 
-
-
-
+;
 ;定义zhlisp
-;(defmacro zhlisp (zh en help)
+;(defmacro zhlisp (en zh help)
 ;	`(defmacro ,zh (&optional &body body)
 ;		,help
 ;		`(,',en ,@body)))
