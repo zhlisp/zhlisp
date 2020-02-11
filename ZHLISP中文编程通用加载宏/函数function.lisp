@@ -362,7 +362,7 @@
 (MIN									最小值			"【最小值/min】返回参数的值最小的一个")
 ;(MINUSP								小于零
 ;(MISMATCH
-;(MOD									商				"【余/mod】要决定某一个数是否可以被另一个数除，我们使用函数mod，它返回相除后的余数")
+;(MOD									模				"【模/mod】返回两个实数截断相除得到的模")
 ;(MUFFLE-WARNING
 ;(NAME-CHAR
 ;(NAMESTRING
@@ -463,7 +463,7 @@
 ;(REALPART
 ;(REDUCE
 ;(REINITIALIZE-INSTANCE
-(REM									余数			"【余数/rem】返回计算到的余数")
+(REM									余数			"【余数/rem】返回两个实数截断相除得到的余数")
 ;(REMHASH
 (REMOVE									移除值			"【移除值/remove】返回第二个列表中所有不包含第一个参数的值的新列表")
 ;(REMOVE-DUPLICATES

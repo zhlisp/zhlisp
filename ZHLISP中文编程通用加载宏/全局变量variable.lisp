@@ -33,7 +33,7 @@
 ;(*PRINT-RIGHT-MARGIN*
 (*QUERY-IO*						*输入流*		"关联到当前终端的输入流全局变量")
 ;(*RANDOM-STATE*
-;(*READ-BASE*
+;(*READ-BASE*					*进制值*		"更改当前读取器在数字上使用的进制基数"
 ;(*READ-DEFAULT-FLOAT-FORMAT*
 ;(*READ-EVAL*
 ;(*READ-SUPPRESS*
