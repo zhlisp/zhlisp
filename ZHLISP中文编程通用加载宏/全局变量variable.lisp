@@ -7,7 +7,7 @@
 ;(*DEBUG-IO*
 ;(*DEFAULT-PATHNAME-DEFAULTS*
 ;(*ERROR-OUTPUT*
-;(*FEATURES*
+;(*FEATURES*					*平台列表*		"当前实现和底层平台的属性列表")
 ;(*GENSYM-COUNTER*
 ;(*LOAD-PATHNAME*
 ;(*LOAD-PRINT*
@@ -29,7 +29,7 @@
 ;(*PRINT-PPRINT-DISPATCH*
 ;(*PRINT-PRETTY*
 ;(*PRINT-RADIX*
-;(*PRINT-READABLY*
+;(*PRINT-READABLY*				*打印可读*		"为真时可以保证打印的表达式也可读")
 ;(*PRINT-RIGHT-MARGIN*
 (*QUERY-IO*						*输入流*		"关联到当前终端的输入流全局变量")
 ;(*RANDOM-STATE*

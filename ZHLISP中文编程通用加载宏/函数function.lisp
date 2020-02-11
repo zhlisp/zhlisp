@@ -112,14 +112,14 @@
 ;(CHARACTERP
 (CHAR-CODE								字符编码		"【字符编码/char-code】返回字符的数字编码")
 ;(CHAR-DOWNCASE
-;(CHAR-EQUAL
-;(CHAR-GREATERP
+;(CHAR-EQUAL							松字符=			"【松字符=/CHAR-EQUAL】判断两个字符是否相等，不区分大小写")
+;(CHAR-GREATERP							松字符>			"【松字符>/CHAR-GREATERP】判断第一个字符是否大于第二个字符，不区分大小写")
 ;(CHAR-INT
-;(CHAR-LESSP
+;(CHAR-LESSP							松字符<			"【松字符</CHAR-LESSP】判断第一个字符是否小于第二个字符，不区分大小写")
 ;(CHAR-NAME
-;(CHAR-NOT-EQUAL
-;(CHAR-NOT-GREATERP
-;(CHAR-NOT-LESSP
+;(CHAR-NOT-EQUAL						松字符/=		"【松字符/=/CHAR-NOT-EQUAL】判断两个字符是否不相等，不区分大小写")
+;(CHAR-NOT-GREATERP						松字符<=		"【松字符<=/CHAR-NOT-GREATERP】判断第一个字符是否小于等于第二个字符，不区分大小写")
+;(CHAR-NOT-LESSP						松字符>=		"【松字符>=/CHAR-NOT-LESSP】判断第一个字符是否大于等于第二个字符，不区分大小写")
 ;(CHAR-UPCASE
 ;(CIS
 ;(CLASS-NAME
@@ -526,21 +526,21 @@
 ;(STREAM-EXTERNAL-FORMAT
 ;(STREAMP
 ;(STRING
-;(STRING/=
-;(STRING<
-;(STRING<=
-;(STRING=
-;(STRING>
-;(STRING>=
+;(STRING/=								文本/=			"【文本/=/STRING/=】判断两个文本字符串是否不相等")
+;(STRING<								文本<			"【文本</STRING<】判断第一个文本字符串是否小于第二个文本字符串")
+;(STRING<=								文本<=			"【文本<=/STRING<=】判断第一个文本字符串是否小于等于第二个文本字符串")
+;(STRING=								文本=			"【文本=/STRING=】判断两个文本字符串是否相等")
+;(STRING>								文本>			"【文本>/STRING>】判断第一个文本字符串是否大于第二个文本字符串")
+;(STRING>=								文本>=			"【文本>=/STRING>=】判断第一个文本字符串是否大于等于第二个文本字符串")
 ;(STRING-CAPITALIZE
 ;(STRING-DOWNCASE
-(STRING-EQUAL							文本意同		"【文本意同/string-equal】比较字符串,不区分大小写")
-;(STRING-GREATERP
+;;(STRING-EQUAL							松文本=			"【松文本=/STRING-EQUAL】判断两个文本字符串是否相等,不区分大小写")
+;(STRING-GREATERP						松文本>			"【松文本>/STRING-GREATERP】判断第一个文本字符串是否大于第二个文本字符串,不区分大小写")
 ;(STRING-LEFT-TRIM
-;(STRING-LESSP
-;(STRING-NOT-EQUAL
-;(STRING-NOT-GREATERP
-;(STRING-NOT-LESSP
+;(STRING-LESSP							松文本<			"【松文本</STRING-LESSP】判断第一个文本字符串是否小于第二个文本字符串,不区分大小写")
+;(STRING-NOT-EQUAL						松文本/=		"【松文本/=/STRING-NOT-EQUAL】判断两个文本字符串是否不相等,不区分大小写")
+;(STRING-NOT-GREATERP					松文本<=		"【松文本<=/STRING-NOT-GREATERP】判断第一个文本字符串是否小于等于第二个文本字符串,不区分大小写")
+;(STRING-NOT-LESSP						松文本>=		"【松文本>=/STRING-NOT-LESSP】判断第一个文本字符串是否大于等于第二个文本字符串,不区分大小写")
 ;(STRINGP
 ;(STRING-RIGHT-TRIM
 ;(STRING-TRIM
