@@ -126,3 +126,4 @@
 (force-output		强制输出		"【强制输出/force-output】输出内容到数据流")
 (remove-if-not		不匹配删除		"【不匹配删除/remove-if-not】将不符合条件的元素删除")
 (remove-if			匹配删除		"【匹配删除/remove-if】将符合条件的元素删除")
+(WITH-STANDARD-IO-SYNTAX		读写标准		"【读写标准/with-standard-io-syntax】确保读写内容格式兼容")
