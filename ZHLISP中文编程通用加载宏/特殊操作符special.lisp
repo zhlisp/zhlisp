@@ -11,7 +11,7 @@
 ;(LOAD-TIME-VALUE
 ;(LOCALLY
 ;(MACROLET
-;(MULTIPLE-VALUE-CALL	返回多值
+(MULTIPLE-VALUE-CALL	返回多值		"【返回多值/MULTIPLE-VALUE-CALL】返回多个值")
 ;(MULTIPLE-VALUE-PROG1
 (PROGN					依序求值		"【依序求值/progn】接受任意数量的表达式，依序求值并返回最后一个表达式的值")
 ;(PROGV

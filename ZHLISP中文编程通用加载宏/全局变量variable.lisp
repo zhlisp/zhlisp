@@ -7,7 +7,7 @@
 ;(*DEBUG-IO*
 ;(*DEFAULT-PATHNAME-DEFAULTS*
 ;(*ERROR-OUTPUT*
-;(*FEATURES*					*平台列表*		"当前实现和底层平台的属性列表")
+(*FEATURES*					*平台列表*		"当前实现和底层平台的属性列表")
 ;(*GENSYM-COUNTER*
 ;(*LOAD-PATHNAME*
 ;(*LOAD-PRINT*
@@ -29,16 +29,16 @@
 ;(*PRINT-PPRINT-DISPATCH*
 ;(*PRINT-PRETTY*
 ;(*PRINT-RADIX*
-;(*PRINT-READABLY*				*打印可读*		"为真时可以保证打印的表达式也可读")
+(*PRINT-READABLY*				*打印可读*		"为真时可以保证打印的表达式也可读")
 ;(*PRINT-RIGHT-MARGIN*
 (*QUERY-IO*						*输入流*		"关联到当前终端的输入流全局变量")
 ;(*RANDOM-STATE*
-;(*READ-BASE*					*进制值*		"更改当前读取器在数字上使用的进制基数"
+(*READ-BASE*					*进制值*		"更改当前读取器在数字上使用的进制基数")
 ;(*READ-DEFAULT-FLOAT-FORMAT*
 ;(*READ-EVAL*
 ;(*READ-SUPPRESS*
 ;(*READTABLE*
-;(*STANDARD-INPUT*				*标准输入*
-;(*STANDARD-OUTPUT*				*标准输出*
+(*STANDARD-INPUT*				*标准输入*		"标准输入流地址")
+(*STANDARD-OUTPUT*				*标准输出*		"标准输出流地址")
 ;(*TERMINAL-IO*
 ;(*TRACE-OUTPUT*

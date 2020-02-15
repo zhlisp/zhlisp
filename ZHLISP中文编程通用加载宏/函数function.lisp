@@ -112,14 +112,14 @@
 ;(CHARACTERP
 (CHAR-CODE								字符编码		"【字符编码/char-code】返回字符的数字编码")
 ;(CHAR-DOWNCASE
-;(CHAR-EQUAL							松字符=			"【松字符=/CHAR-EQUAL】判断两个字符是否相等，不区分大小写")
-;(CHAR-GREATERP							松字符>			"【松字符>/CHAR-GREATERP】判断第一个字符是否大于第二个字符，不区分大小写")
+(CHAR-EQUAL								松字符=			"【松字符=/CHAR-EQUAL】判断两个字符是否相等，不区分大小写")
+(CHAR-GREATERP							松字符>			"【松字符>/CHAR-GREATERP】判断第一个字符是否大于第二个字符，不区分大小写")
 ;(CHAR-INT
-;(CHAR-LESSP							松字符<			"【松字符</CHAR-LESSP】判断第一个字符是否小于第二个字符，不区分大小写")
+(CHAR-LESSP								松字符<			"【松字符</CHAR-LESSP】判断第一个字符是否小于第二个字符，不区分大小写")
 ;(CHAR-NAME
-;(CHAR-NOT-EQUAL						松字符/=		"【松字符/=/CHAR-NOT-EQUAL】判断两个字符是否不相等，不区分大小写")
-;(CHAR-NOT-GREATERP						松字符<=		"【松字符<=/CHAR-NOT-GREATERP】判断第一个字符是否小于等于第二个字符，不区分大小写")
-;(CHAR-NOT-LESSP						松字符>=		"【松字符>=/CHAR-NOT-LESSP】判断第一个字符是否大于等于第二个字符，不区分大小写")
+(CHAR-NOT-EQUAL							松字符/=		"【松字符/=/CHAR-NOT-EQUAL】判断两个字符是否不相等，不区分大小写")
+(CHAR-NOT-GREATERP						松字符<=		"【松字符<=/CHAR-NOT-GREATERP】判断第一个字符是否小于等于第二个字符，不区分大小写")
+(CHAR-NOT-LESSP							松字符>=		"【松字符>=/CHAR-NOT-LESSP】判断第一个字符是否大于等于第二个字符，不区分大小写")
 ;(CHAR-UPCASE
 ;(CIS
 ;(CLASS-NAME
@@ -139,7 +139,7 @@
 ;(COMPLEXP
 ;(COMPUTE-APPLICABLE-METHODS
 ;(COMPUTE-RESTARTS
-(CONCATENATE							文本拼接		"【文本拼接/concatenate】将多个文本拼接成一个文本")
+(CONCATENATE							连接		"【连接/concatenate】将多个元素拼接成一个，但要指明类型")
 ;(CONCATENATED-STREAM-STREAMS
 ;(CONJUGATE
 (CONS									点对			"【点对/cons】根据传入的参数构造一个新列表")
@@ -224,7 +224,7 @@
 ;(FIND-RESTART
 ;(FIND-SYMBOL
 ;(FINISH-OUTPUT
-;(FIRST
+(FIRST									前元素			"【前元素/FIRST】返回列表的第一个元素")
 ;(FLOAT
 ;(FLOAT-DIGITS
 ;(FLOATP
@@ -360,9 +360,9 @@
 ;(METHOD-COMBINATION-ERROR
 ;(METHOD-QUALIFIERS
 (MIN									最小值			"【最小值/min】返回参数的值最小的一个")
-;(MINUSP								小于零
+(MINUSP									小于零			"【小于零/MINUSP】判断传入参数是否小于零")
 ;(MISMATCH
-;(MOD									模				"【模/mod】返回两个实数截断相除得到的模")
+(MOD									模				"【模/mod】返回两个实数截断相除得到的模")
 ;(MUFFLE-WARNING
 ;(NAME-CHAR
 ;(NAMESTRING
@@ -419,7 +419,7 @@
 ;(PATHNAME-VERSION
 ;(PEEK-CHAR
 ;(PHASE
-;(PLUSP									大于零
+(PLUSP									大于零			"【大于零/PLUSP】判断传入参数是否大于零")
 ;(POSITION
 ;(POSITION-IF
 ;(POSITION-IF-NOT
@@ -475,12 +475,12 @@
 ;(RENAME-PACKAGE
 ;(REPLACE
 ;(REQUIRE
-;(REST
+(REST									后元素			"【后元素/REST】返回除列表的第一个元素之外的所有元素")
 ;(RESTART-NAME
 ;(REVAPPEND
 (REVERSE								倒序			"【倒序/reverse】返回与其参数相同元素的一个序列,但顺序颠倒")
 ;(ROOM
-;(ROUND									舍入偶数
+(ROUND									舍入偶数		"【舍入偶数/ROUND】四舍五入到最接近的偶数")
 ;(ROW-MAJOR-AREF
 ;(RPLACA
 ;(RPLACD
@@ -526,21 +526,21 @@
 ;(STREAM-EXTERNAL-FORMAT
 ;(STREAMP
 ;(STRING
-;(STRING/=								文本/=			"【文本/=/STRING/=】判断两个文本字符串是否不相等")
-;(STRING<								文本<			"【文本</STRING<】判断第一个文本字符串是否小于第二个文本字符串")
-;(STRING<=								文本<=			"【文本<=/STRING<=】判断第一个文本字符串是否小于等于第二个文本字符串")
-;(STRING=								文本=			"【文本=/STRING=】判断两个文本字符串是否相等")
-;(STRING>								文本>			"【文本>/STRING>】判断第一个文本字符串是否大于第二个文本字符串")
-;(STRING>=								文本>=			"【文本>=/STRING>=】判断第一个文本字符串是否大于等于第二个文本字符串")
+(STRING/=								文本/=			"【文本/=/STRING/=】判断两个文本字符串是否不相等")
+(STRING<								文本<			"【文本</STRING<】判断第一个文本字符串是否小于第二个文本字符串")
+(STRING<=								文本<=			"【文本<=/STRING<=】判断第一个文本字符串是否小于等于第二个文本字符串")
+(STRING=								文本=			"【文本=/STRING=】判断两个文本字符串是否相等")
+(STRING>								文本>			"【文本>/STRING>】判断第一个文本字符串是否大于第二个文本字符串")
+(STRING>=								文本>=			"【文本>=/STRING>=】判断第一个文本字符串是否大于等于第二个文本字符串")
 ;(STRING-CAPITALIZE
 ;(STRING-DOWNCASE
-;;(STRING-EQUAL							松文本=			"【松文本=/STRING-EQUAL】判断两个文本字符串是否相等,不区分大小写")
-;(STRING-GREATERP						松文本>			"【松文本>/STRING-GREATERP】判断第一个文本字符串是否大于第二个文本字符串,不区分大小写")
+(STRING-EQUAL							松文本=			"【松文本=/STRING-EQUAL】判断两个文本字符串是否相等,不区分大小写")
+(STRING-GREATERP						松文本>			"【松文本>/STRING-GREATERP】判断第一个文本字符串是否大于第二个文本字符串,不区分大小写")
 ;(STRING-LEFT-TRIM
-;(STRING-LESSP							松文本<			"【松文本</STRING-LESSP】判断第一个文本字符串是否小于第二个文本字符串,不区分大小写")
-;(STRING-NOT-EQUAL						松文本/=		"【松文本/=/STRING-NOT-EQUAL】判断两个文本字符串是否不相等,不区分大小写")
-;(STRING-NOT-GREATERP					松文本<=		"【松文本<=/STRING-NOT-GREATERP】判断第一个文本字符串是否小于等于第二个文本字符串,不区分大小写")
-;(STRING-NOT-LESSP						松文本>=		"【松文本>=/STRING-NOT-LESSP】判断第一个文本字符串是否大于等于第二个文本字符串,不区分大小写")
+(STRING-LESSP							松文本<			"【松文本</STRING-LESSP】判断第一个文本字符串是否小于第二个文本字符串,不区分大小写")
+(STRING-NOT-EQUAL						松文本/=		"【松文本/=/STRING-NOT-EQUAL】判断两个文本字符串是否不相等,不区分大小写")
+(STRING-NOT-GREATERP					松文本<=		"【松文本<=/STRING-NOT-GREATERP】判断第一个文本字符串是否小于等于第二个文本字符串,不区分大小写")
+(STRING-NOT-LESSP						松文本>=		"【松文本>=/STRING-NOT-LESSP】判断第一个文本字符串是否大于等于第二个文本字符串,不区分大小写")
 ;(STRINGP
 ;(STRING-RIGHT-TRIM
 ;(STRING-TRIM
@@ -574,7 +574,7 @@
 ;(TRANSLATE-PATHNAME
 ;(TREE-EQUAL
 ;(TRUENAME
-;(TRUNCATE								向零整数
+(TRUNCATE								向零整数		"【向零整数/TRUNCATE】向零方向对浮点数取整数")
 ;(TWO-WAY-STREAM-INPUT-STREAM
 ;(TWO-WAY-STREAM-OUTPUT-STREAM
 ;(TYPE-OF
@@ -608,6 +608,6 @@
 ;(WRITE-SEQUENCE
 ;(WRITE-STRING
 ;(WRITE-TO-STRING
-;(YES-OR-NO-P
+(YES-OR-NO-P							是否全称		"【是否全称/YES-OR-NO-P】提示输入是否并执行判断结果，全称函数")
 (Y-OR-N-P								是否			"【是否/y-or-n-p】提示输入是否并执行判断结果")
-;(ZEROP									等于零
+(ZEROP									等于零			"【等于零/ZEROP】判断参数是否等于零")
