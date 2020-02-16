@@ -1,0 +1,6 @@
+(capi:display-message				对话框			"【对话框/capi:display-message】弹出一个对话框窗口")
+(capi:prompt-for-string				输入框			"【输入框/capi:prompt-for-string】弹出输入文本对话框窗口")
+(capi:prompt-for-number				输入数字		"【输入数字/capi:prompt-for-number】弹出输入数字对话框窗口")
+(capi:prompt-for-confirmation		确认框			"【确认框/capi:prompt-for-confirmation】弹出确认是否对话框窗口")
+(capi:prompt-with-list				单选框			"【单选框/capi:prompt-with-list】弹出单项选择对话框框窗口")
+(capi:prompt-for-items-from-list	多选框			"【多选框/capi:prompt-for-items-from-list】弹出多项选择对话框框窗口")

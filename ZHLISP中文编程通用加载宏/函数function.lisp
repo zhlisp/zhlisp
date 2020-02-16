@@ -200,7 +200,7 @@
 ;(EVERY
 ;(EXP
 ;(EXPORT
-;(EXPT
+(EXPT									次方			"【次方/EXPT】求值第一个参数的第二个参数次方")
 ;(FBOUNDP
 ;(FCEILING
 ;(FDEFINITION
@@ -217,7 +217,7 @@
 ;(FIND
 ;(FIND-ALL-SYMBOLS
 ;(FIND-CLASS
-;(FIND-IF
+(FIND-IF								函数真			"【函数真/FIND-IF】函数结果为真时返回值，为假时不返回")
 ;(FIND-IF-NOT
 ;(FIND-METHOD
 ;(FIND-PACKAGE
@@ -431,9 +431,9 @@
 ;(PPRINT-NEWLINE
 ;(PPRINT-TAB
 ;(PPRINT-TABULAR
-;(PRIN1
+(PRIN1									表达式打印		"【表达式打印/prin1】打印表达式到屏幕，无空格和换行")
 ;(PRIN1-TO-STRING
-;(PRINC
+(PRINC									文本打印		"【文本打印/princ】打印出可阅读文本内容到屏幕")
 ;(PRINC-TO-STRING
 (PRINT									打印			"【打印/print】打印出文本内容到屏幕")
 ;(PRINT-OBJECT

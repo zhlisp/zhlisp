@@ -1,7 +1,7 @@
 (AND								与				"【与/and】如果所有的实参都为真，则返回最后一个实参的值。如果其中一个实参为假，所有实参都不会被求值，返回假")
 ;(ASSERT
 ;(CALL-METHOD
-;(CASE
+(CASE								如果符号		"【如果符号/case】后面跟多个符号，符号后是要执行的表达式")
 ;(CCASE
 ;(CHECK-TYPE
 ;(COMPILER-MACRO-FUNCTION
