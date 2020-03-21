@@ -13,7 +13,7 @@
 (界面 中文LISP)
 
 
-;(load "/home/love/git/zhlisp/ZHLISP中文编程-加载函数.lisp")
+;(load "/home/love/git/zhlisp/ZHLISP中文编程通用加载宏/ZHLISP中文编程-加载函数.lisp")
 ;;;读取定义zhlisp宏或特殊操作符代码，不是lispworks的实现从这里开始加载函数
 (defun macro-special-lisp (en zh help)
   `(defmacro ,zh (&optional &body body)
